@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Core.PlayerInput
 {
-    public class аврывар : IUpdateListener
+    public class PlayerInputLogic : IUpdateListener
     {
         private bool _isDisabled;
         public event Action<Cell> WAERSG;

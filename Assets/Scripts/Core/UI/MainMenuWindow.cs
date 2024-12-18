@@ -21,7 +21,7 @@ namespace Core.UI
 
         protected override void Close()
         {
-            var exitWindow = фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<ExitWindow>();
+            var exitWindow = Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<ExitWindow>();
             exitWindow.SetPrevWindow(this);
             
             CloseWindow();
@@ -29,7 +29,7 @@ namespace Core.UI
 
         private void OpenSettings()
         {
-            var settings = фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<SettingsWindow>();
+            var settings = Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<SettingsWindow>();
             settings.SetPrev(this);
 
             CloseWindow();
@@ -37,9 +37,9 @@ namespace Core.UI
 
         private void OpenPrivacy()
         {
-            LongTextWindow textWindow = фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LongTextWindow>();
-            textWindow.Label = фы23ева.фвыйцуРУИ<TextAtlas>().Map.First(text => text.TypeId == TextAtlas.TextType.Privacy).Label;
-            textWindow.Text = фы23ева.фвыйцуРУИ<TextAtlas>().Map.First(text => text.TypeId == TextAtlas.TextType.Privacy).Text;
+            LongTextWindow textWindow = Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LongTextWindow>();
+            textWindow.Label = Absidiant.фвыйцуРУИ<TextAtlas>().Map.First(text => text.TypeId == TextAtlas.TextType.Privacy).Label;
+            textWindow.Text = Absidiant.фвыйцуРУИ<TextAtlas>().Map.First(text => text.TypeId == TextAtlas.TextType.Privacy).Text;
             textWindow.SetPrevWindow(this);
 
             CloseWindow();
@@ -47,9 +47,9 @@ namespace Core.UI
 
         private void OpenRules()
         {
-            LongTextWindow textWindow = фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LongTextWindow>();
-            textWindow.Label = фы23ева.фвыйцуРУИ<TextAtlas>().Map.First(text => text.TypeId == TextAtlas.TextType.Rules).Label;
-            textWindow.Text = фы23ева.фвыйцуРУИ<TextAtlas>().Map.First(text => text.TypeId == TextAtlas.TextType.Rules).Text;
+            LongTextWindow textWindow = Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LongTextWindow>();
+            textWindow.Label = Absidiant.фвыйцуРУИ<TextAtlas>().Map.First(text => text.TypeId == TextAtlas.TextType.Rules).Label;
+            textWindow.Text = Absidiant.фвыйцуРУИ<TextAtlas>().Map.First(text => text.TypeId == TextAtlas.TextType.Rules).Text;
             textWindow.SetPrevWindow(this);
 
             CloseWindow();
@@ -57,7 +57,7 @@ namespace Core.UI
 
         private void OpenLevelMenu()
         {
-            фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LevelMenuWindow>();
+            Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LevelMenuWindow>();
 
             CloseWindow();
         }

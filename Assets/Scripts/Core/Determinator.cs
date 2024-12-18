@@ -9,16 +9,16 @@ using Object = UnityEngine.Object;
 
 namespace Core
 {
-    public class גאןןנûגא : גאנגאûנג
+    public class Determinator : גאנגאûנג
     {
-        private readonly אגנûגאנ _גאנגû;
-        private readonly ûפןגןנפûנגאגûלûג ___גûאןנגא;
+        private readonly PlayerInputLogic _גאנגû;
+        private readonly Logenation ___גûאןנגא;
         private bool _גûפןנפאגû21;
 
-        public גאןןנûגא()
+        public Determinator()
         {
-            _גאנגû = פû23וגא.פגûיצף׀׃ָ<אגנûגאנ>();
-            ___גûאןנגא = פû23וגא.פגûיצף׀׃ָ<ûפןגןנפûנגאגûלûג>();
+            _גאנגû = Absidiant.פגûיצף׀׃ָ<PlayerInputLogic>();
+            ___גûאןנגא = Absidiant.פגûיצף׀׃ָ<Logenation>();
 
             _גאנגû.WAERSG += DFGHADS;
             _גאנגû.OnDeselected += DSAFHSADF;
@@ -102,7 +102,7 @@ namespace Core
 
     public class DFSHDSFASW : גאנגאûנג
     {
-        private readonly ûפןגןנפûנגאגûלûג _field;
+        private readonly Logenation _field;
         private readonly ASWERHJNDFS _aswerhjndfs;
         private readonly AQRWYE _aqrwye;
         private readonly SDHDAQE ____ASDFRHG;
@@ -114,10 +114,10 @@ namespace Core
 
         public DFSHDSFASW()
         {
-            _field = פû23וגא.פגûיצף׀׃ָ<ûפןגןנפûנגאגûלûג>();
-            _aswerhjndfs = פû23וגא.פגûיצף׀׃ָ<ASWERHJNDFS>();
-            _aqrwye = פû23וגא.פגûיצף׀׃ָ<AQRWYE>();
-            ____ASDFRHG = פû23וגא.פגûיצף׀׃ָ<SDHDAQE>();
+            _field = Absidiant.פגûיצף׀׃ָ<Logenation>();
+            _aswerhjndfs = Absidiant.פגûיצף׀׃ָ<ASWERHJNDFS>();
+            _aqrwye = Absidiant.פגûיצף׀׃ָ<AQRWYE>();
+            ____ASDFRHG = Absidiant.פגûיצף׀׃ָ<SDHDAQE>();
         }
 
         public void LoadLevel(int index)
@@ -155,7 +155,7 @@ namespace Core
 
         public AQRWYE()
         {
-            var buff = פû23וגא.פגûיצף׀׃ָ<LevelScoreConstraints>().Map[0].Score;
+            var buff = Absidiant.פגûיצף׀׃ָ<LevelScoreConstraints>().Map[0].Score;
             ___ASDFGHDFH = new List<TargetScore>();
 
             for (int i = 0; i < buff.Count; i++)
@@ -214,8 +214,8 @@ namespace Core
 
         public void Reset()
         {
-            var buff = פû23וגא.פגûיצף׀׃ָ<LevelScoreConstraints>()
-                .Map[פû23וגא.פגûיצף׀׃ָ<DFSHDSFASW>().ASDFH].Score;
+            var buff = Absidiant.פגûיצף׀׃ָ<LevelScoreConstraints>()
+                .Map[Absidiant.פגûיצף׀׃ָ<DFSHDSFASW>().ASDFH].Score;
             ___ASDFGHDFH = new List<TargetScore>();
 
             for (int i = 0; i < buff.Count; i++)
@@ -292,15 +292,15 @@ namespace Core
 
         public DFHJDFASAS(DFSHDSFASW dfshdsfasw)
         {
-            פû23וגא.פגûיצף׀׃ָ<AQRWYE>().OnValueChanged += CheckWin;
-            _aswerhjndfs = פû23וגא.פגûיצף׀׃ָ<ASWERHJNDFS>();
-            _constraints = פû23וגא.פגûיצף׀׃ָ<LevelScoreConstraints>();
+            Absidiant.פגûיצף׀׃ָ<AQRWYE>().OnValueChanged += CheckWin;
+            _aswerhjndfs = Absidiant.פגûיצף׀׃ָ<ASWERHJNDFS>();
+            _constraints = Absidiant.פגûיצף׀׃ָ<LevelScoreConstraints>();
             _dfshdsfasw = dfshdsfasw;
         }
 
         private void CheckWin(int _)
         {
-            List<TargetScore> current = פû23וגא.פגûיצף׀׃ָ<AQRWYE>().QW4YBDGF;
+            List<TargetScore> current = Absidiant.פגûיצף׀׃ָ<AQRWYE>().QW4YBDGF;
 
             if (!_isInvoked &&
                 current[0].Score >= _constraints.Map[_dfshdsfasw.ASDFH].Score[0].Score &&
@@ -309,7 +309,7 @@ namespace Core
             {
                 OnGameEnd?.Invoke();
                 _isInvoked = true;
-                פû23וגא.פגûיצף׀׃ָ<ASWERHJNDFS>().ADSFHDF();
+                Absidiant.פגûיצף׀׃ָ<ASWERHJNDFS>().ADSFHDF();
             }
         }
 
@@ -343,10 +343,10 @@ namespace Core
 
         public SADHDSAFHDFSHD()
         {
-            _listener = פû23וגא.פגûיצף׀׃ָ<DFHJDFASAS>();
-            _constraints = פû23וגא.פגûיצף׀׃ָ<LevelScoreConstraints>();
-            _level = פû23וגא.פגûיצף׀׃ָ<DFSHDSFASW>();
-            _aqrwye = פû23וגא.פגûיצף׀׃ָ<AQRWYE>();
+            _listener = Absidiant.פגûיצף׀׃ָ<DFHJDFASAS>();
+            _constraints = Absidiant.פגûיצף׀׃ָ<LevelScoreConstraints>();
+            _level = Absidiant.פגûיצף׀׃ָ<DFSHDSFASW>();
+            _aqrwye = Absidiant.פגûיצף׀׃ָ<AQRWYE>();
 
             _listener.OnGameEnd += GetResult;
         }
@@ -378,11 +378,11 @@ namespace Core
 
         public DSFZJDSFGJDF()
         {
-            _constraints = פû23וגא.פגûיצף׀׃ָ<LevelScoreConstraints>();
-            _loader = פû23וגא.פגûיצף׀׃ָ<DFSHDSFASW>();
-            _resolver = פû23וגא.פגûיצף׀׃ָ<SADHDSAFHDFSHD>();
-            _ui = פû23וגא.פגûיצף׀׃ָ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>();
-            _aqrwye = פû23וגא.פגûיצף׀׃ָ<AQRWYE>();
+            _constraints = Absidiant.פגûיצף׀׃ָ<LevelScoreConstraints>();
+            _loader = Absidiant.פגûיצף׀׃ָ<DFSHDSFASW>();
+            _resolver = Absidiant.פגûיצף׀׃ָ<SADHDSAFHDFSHD>();
+            _ui = Absidiant.פגûיצף׀׃ָ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>();
+            _aqrwye = Absidiant.פגûיצף׀׃ָ<AQRWYE>();
             _openedLevels = new bool[_constraints.Map.Count];
             _openedLevels[0] = true;
 
@@ -391,7 +391,7 @@ namespace Core
 
         private void TryOpenLevel(SADHDSAFHDFSHD.GameResult result)
         {
-            פû23וגא.פגûיצף׀׃ָ<ûפןגןנפûנגאגûלûג>().SetFieldVisibility(false);
+            Absidiant.פגûיצף׀׃ָ<Logenation>().SetFieldVisibility(false);
             EndGameWindow endWindow = _ui.Open<EndGameWindow>();
             endWindow.SetPrev(_ui.Open<GameWindow>());
             endWindow.SetResult(result);

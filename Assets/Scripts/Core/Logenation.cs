@@ -8,7 +8,7 @@ using Vector3 = UnityEngine.Vector3;
 
 namespace Core
 {
-    public class ûפןגןנפûנגאגûלûג : גאנגאûנג
+    public class Logenation : גאנגאûנג
     {
         private const int FieldResX = 5;
         private const int FieldResY = 5;
@@ -31,7 +31,7 @@ namespace Core
         public event Action OnAnimationStateStarted;
         public event Action OnAnimationStateEnded;
 
-        public ûפןגןנפûנגאגûלûג(GameObject fieldParent, Cell reference, GameObject fieldBg)
+        public Logenation(GameObject fieldParent, Cell reference, GameObject fieldBg)
         {
             _fieldParent = fieldParent;
             _fieldBg = fieldBg;
@@ -52,13 +52,13 @@ namespace Core
             if (_selected == null)
             {
                 Select(cell);
-                פû23וגא.פגûיצף׀׃ָ<ClickSoundController>().Play();
+                Absidiant.פגûיצף׀׃ָ<ClickSoundController>().Play();
             }
             else if (_selected != null)
             {
                 //Select(cell);
                 TryChangeCellPositions(first: _selected, second: cell);
-                פû23וגא.פגûיצף׀׃ָ<ClickSoundController>().Play();
+                Absidiant.פגûיצף׀׃ָ<ClickSoundController>().Play();
                 Deselect();
             }
             else
@@ -325,21 +325,21 @@ namespace Core
 
                 foreach (var cell in match.Item1)
                 {
-                    פû23וגא.פגûיצף׀׃ָ<AQRWYE>().ASWERADSGDSAFHDS(cell.Type);
-                    פû23וגא.פגûיצף׀׃ָ<ASWDFRHG>().DSAFHASDFH(cell);
+                    Absidiant.פגûיצף׀׃ָ<AQRWYE>().ASWERADSGDSAFHDS(cell.Type);
+                    Absidiant.פגûיצף׀׃ָ<ASWDFRHG>().DSAFHASDFH(cell);
                 }
 
                 foreach (var cell in match.Item2)
                 {
                     if (cell.gameObject.activeSelf)
                     {
-                        פû23וגא.פגûיצף׀׃ָ<AQRWYE>().ASWERADSGDSAFHDS(cell.Type);
-                        פû23וגא.פגûיצף׀׃ָ<ASWDFRHG>().DSAFHASDFH(cell);
+                        Absidiant.פגûיצף׀׃ָ<AQRWYE>().ASWERADSGDSAFHDS(cell.Type);
+                        Absidiant.פגûיצף׀׃ָ<ASWDFRHG>().DSAFHASDFH(cell);
                     }
                 }
             }
 
-            פû23וגא.פגûיצף׀׃ָ<AQRWYE>().OnMatch(countDeleteCells);
+            Absidiant.פגûיצף׀׃ָ<AQRWYE>().OnMatch(countDeleteCells);
             DropCells();
             DeleteMatches();
         }
@@ -382,7 +382,7 @@ namespace Core
 
         private void AddCell(int x, int y)
         {
-            _fieldMatrix[x, y] = פû23וגא.פגûיצף׀׃ָ<ASWDFRHG>().DFRHDEASS();
+            _fieldMatrix[x, y] = Absidiant.פגûיצף׀׃ָ<ASWDFRHG>().DFRHDEASS();
             _fieldMatrix[x, y].gameObject.transform.position = _worldPositions[0, y] + Vector3.up * _offset.y;
             _fieldMatrix[x, y].Position = new Vector2Int(x, y);
             _fieldMatrix[x, y].Type = (CellAtlas.CellType)UnityEngine.Random.Range(0, _typeCount);

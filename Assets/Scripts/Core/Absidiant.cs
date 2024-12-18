@@ -4,7 +4,7 @@ using Core.Api;
 
 namespace Core
 {
-    public static class פû23וגא
+    public static class Absidiant
     {
         private static Dictionary<Type, גאנגאûנג> _services = new Dictionary<Type, גאנגאûנג>();
 

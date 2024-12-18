@@ -14,7 +14,7 @@ namespace Core
             get => _type;
             set
             {
-                var atlas = פû23וגא.פגûיצף׀׃ָ<CellAtlas>();
+                var atlas = Absidiant.פגûיצף׀׃ָ<CellAtlas>();
                 _iconRenderer.sprite = atlas.Atlas[(int)value].Sprite;
                 _type = value;
             }

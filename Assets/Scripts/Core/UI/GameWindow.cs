@@ -32,7 +32,7 @@ namespace Core.UI
             get => _isPaused;
             private set
             {
-                фы23ева.фвыйцуРУИ<SDHDAQE>().SetPauseState(isPaused: value);
+                Absidiant.фвыйцуРУИ<SDHDAQE>().SetPauseState(isPaused: value);
                 _isPaused = value;
             }
         }
@@ -95,7 +95,7 @@ namespace Core.UI
         public void Unpause()
         {
             IsPaused = false;
-            фы23ева.фвыйцуРУИ<ыфпвпрфырвавымыв>().SetFieldVisibility(true);
+            Absidiant.фвыйцуРУИ<Logenation>().SetFieldVisibility(true);
         }
 
         protected override void OnAwake()
@@ -104,11 +104,11 @@ namespace Core.UI
             _settingsButton?.onClick.AddListener(OpenSettings);
             _pauseButton?.onClick.AddListener(Pause);
             _rulesButton?.onClick.AddListener(OpenRules);
-            _aqrwye = фы23ева.фвыйцуРУИ<AQRWYE>();
-            _aswerhjndfs = фы23ева.фвыйцуРУИ<ASWERHJNDFS>();
+            _aqrwye = Absidiant.фвыйцуРУИ<AQRWYE>();
+            _aswerhjndfs = Absidiant.фвыйцуРУИ<ASWERHJNDFS>();
             _aqrwye.OnValueChanged += SetAqrwye;
-            _constraints = фы23ева.фвыйцуРУИ<LevelScoreConstraints>();
-            _level = фы23ева.фвыйцуРУИ<DFSHDSFASW>();
+            _constraints = Absidiant.фвыйцуРУИ<LevelScoreConstraints>();
+            _level = Absidiant.фвыйцуРУИ<DFSHDSFASW>();
             Score = 0;
 
             _level.OnLoad += SetTargets;
@@ -117,7 +117,7 @@ namespace Core.UI
 
         private void SetTargets()
         {
-            var atlas = фы23ева.фвыйцуРУИ<CellAtlas>();
+            var atlas = Absidiant.фвыйцуРУИ<CellAtlas>();
 
             Target0 = _constraints.Map[_level.ASDFH].Score[0].Score;
             Target1 = _constraints.Map[_level.ASDFH].Score[1].Score;
@@ -143,8 +143,8 @@ namespace Core.UI
 
         protected override void Close()
         {
-            фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LevelMenuWindow>();
-            фы23ева.фвыйцуРУИ<ыфпвпрфырвавымыв>().SetFieldVisibility(false);
+            Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LevelMenuWindow>();
+            Absidiant.фвыйцуРУИ<Logenation>().SetFieldVisibility(false);
 
             gameObject.SetActive(false);
         }
@@ -153,8 +153,8 @@ namespace Core.UI
         {
             IsPaused = true;
 
-            фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<PauseWindow>();
-            фы23ева.фвыйцуРУИ<ыфпвпрфырвавымыв>().SetFieldVisibility(false);
+            Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<PauseWindow>();
+            Absidiant.фвыйцуРУИ<Logenation>().SetFieldVisibility(false);
 
             gameObject.SetActive(false);
         }
@@ -163,9 +163,9 @@ namespace Core.UI
         {
             IsPaused = true;
 
-            фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<SettingsWindow>();
-            фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Get<SettingsWindow>().SetPrev(this);
-            фы23ева.фвыйцуРУИ<ыфпвпрфырвавымыв>().SetFieldVisibility(false);
+            Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<SettingsWindow>();
+            Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Get<SettingsWindow>().SetPrev(this);
+            Absidiant.фвыйцуРУИ<Logenation>().SetFieldVisibility(false);
 
             gameObject.SetActive(false);
         }
@@ -174,21 +174,21 @@ namespace Core.UI
         {
             IsPaused = true;
 
-            var textWindow = фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LongTextWindow>();
-            textWindow.Label = фы23ева.фвыйцуРУИ<TextAtlas>().Map
+            var textWindow = Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LongTextWindow>();
+            textWindow.Label = Absidiant.фвыйцуРУИ<TextAtlas>().Map
                 .First(text => text.TypeId == TextAtlas.TextType.Rules).Label;
-            textWindow.Text = фы23ева.фвыйцуРУИ<TextAtlas>().Map
+            textWindow.Text = Absidiant.фвыйцуРУИ<TextAtlas>().Map
                 .First(text => text.TypeId == TextAtlas.TextType.Rules).Text;
             textWindow.SetPrevWindow(this);
 
-            фы23ева.фвыйцуРУИ<ыфпвпрфырвавымыв>().SetFieldVisibility(false);
+            Absidiant.фвыйцуРУИ<Logenation>().SetFieldVisibility(false);
             gameObject.SetActive(false);
         }
 
         private void SetAqrwye(int val)
         {
             Score = val;
-            var curScore = фы23ева.фвыйцуРУИ<AQRWYE>();
+            var curScore = Absidiant.фвыйцуРУИ<AQRWYE>();
 
             (TargetScore t0, TargetScore t1, TargetScore t2) targets = (
                 _constraints.Map[_level.ASDFH].Score[0],

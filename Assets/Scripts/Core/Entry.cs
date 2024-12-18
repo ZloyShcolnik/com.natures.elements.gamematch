@@ -31,37 +31,37 @@ namespace Core
         private void Start()
         {
             //ServiceLocator.Get<InterfaceDispatcher>().Open<MainMenuWindow>();
-            фы23ева.фвыйцу–”»<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<PrivacyDialogWindow>();
-            фы23ева.фвыйцу–”»<ыфпвпрфырвавымыв>().SetFieldVisibility(false);
+            Absidiant.фвыйцу–”»<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<PrivacyDialogWindow>();
+            Absidiant.фвыйцу–”»<Logenation>().SetFieldVisibility(false);
         }
 
         private void InstallBindings()
         {
-            фы23ева.Bind<CellAtlas>(_cellAtlas);
-            фы23ева.Bind<TextAtlas>(_textAtlas);
-            фы23ева.Bind<LevelScoreConstraints>(_levelConstraints);
-            фы23ева.Bind<SDHDAQE>(_sdhdaqe);
-            фы23ева.Bind<ыфпвпрфырвавымыв>(new ыфпвпрфырвавымыв(_fieldParent, _cellReference,_fieldBg));
-            фы23ева.Bind<аврывар>(new аврывар());
-            фы23ева.Bind<ваппрыва>(new ваппрыва());
-            фы23ева.Bind<AQRWYE>(new AQRWYE());
-            фы23ева.Bind<ASWERHJNDFS>(new ASWERHJNDFS());
+            Absidiant.Bind<CellAtlas>(_cellAtlas);
+            Absidiant.Bind<TextAtlas>(_textAtlas);
+            Absidiant.Bind<LevelScoreConstraints>(_levelConstraints);
+            Absidiant.Bind<SDHDAQE>(_sdhdaqe);
+            Absidiant.Bind<Logenation>(new Logenation(_fieldParent, _cellReference,_fieldBg));
+            Absidiant.Bind<PlayerInputLogic>(new PlayerInputLogic());
+            Absidiant.Bind<Determinator>(new Determinator());
+            Absidiant.Bind<AQRWYE>(new AQRWYE());
+            Absidiant.Bind<ASWERHJNDFS>(new ASWERHJNDFS());
             
             var levelLoader = new DFSHDSFASW();
-            фы23ева.Bind<DFSHDSFASW>(levelLoader);
-            фы23ева.Bind<DFHJDFASAS>(new DFHJDFASAS(levelLoader));
-            levelLoader.SetListener(фы23ева.фвыйцу–”»<DFHJDFASAS>());
+            Absidiant.Bind<DFSHDSFASW>(levelLoader);
+            Absidiant.Bind<DFHJDFASAS>(new DFHJDFASAS(levelLoader));
+            levelLoader.SetListener(Absidiant.фвыйцу–”»<DFHJDFASAS>());
             
-            фы23ева.Bind<ASWDFRHG>(new ASWDFRHG(_cellReference));
-            фы23ева.Bind<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>(new ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF(_ui, _canvas));
-            фы23ева.Bind<SADHDSAFHDFSHD>(new SADHDSAFHDFSHD());
-            фы23ева.Bind<DSFZJDSFGJDF>(new DSFZJDSFGJDF());
-            фы23ева.Bind<SoundController>(new SoundController(_sound));
-            фы23ева.Bind<ClickSoundController>(new ClickSoundController(_clickSound));
+            Absidiant.Bind<ASWDFRHG>(new ASWDFRHG(_cellReference));
+            Absidiant.Bind<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>(new ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF(_ui, _canvas));
+            Absidiant.Bind<SADHDSAFHDFSHD>(new SADHDSAFHDFSHD());
+            Absidiant.Bind<DSFZJDSFGJDF>(new DSFZJDSFGJDF());
+            Absidiant.Bind<SoundController>(new SoundController(_sound));
+            Absidiant.Bind<ClickSoundController>(new ClickSoundController(_clickSound));
 
-            _sdhdaqe.Bind(фы23ева.фвыйцу–”»<ASWERHJNDFS>()).AsUpdateListener();
-            _sdhdaqe.Bind(фы23ева.фвыйцу–”»<аврывар>()).AsUpdateListener();
-            _sdhdaqe.Bind(фы23ева.фвыйцу–”»<DFHJDFASAS>()).AsUpdateListener();
+            _sdhdaqe.Bind(Absidiant.фвыйцу–”»<ASWERHJNDFS>()).AsUpdateListener();
+            _sdhdaqe.Bind(Absidiant.фвыйцу–”»<PlayerInputLogic>()).AsUpdateListener();
+            _sdhdaqe.Bind(Absidiant.фвыйцу–”»<DFHJDFASAS>()).AsUpdateListener();
         }
     }
 }

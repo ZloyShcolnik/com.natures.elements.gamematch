@@ -71,12 +71,12 @@ namespace Core.UI
         private IEnumerator HideFieldRoutine()
         {
             yield return null;
-            фы23ева.фвыйцуРУИ<ыфпвпрфырвавымыв>().SetFieldVisibility(false);
+            Absidiant.фвыйцуРУИ<Logenation>().SetFieldVisibility(false);
         }
 
         private void OpenMenu()
         {
-            фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LevelMenuWindow>();
+            Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LevelMenuWindow>();
             Close();
         }
 
@@ -98,13 +98,13 @@ namespace Core.UI
 
         private void OnEnable()
         {
-            фы23ева.фвыйцуРУИ<аврывар>().Disable();
+            Absidiant.фвыйцуРУИ<PlayerInputLogic>().Disable();
             StartCoroutine(ClosePrefRoutine());
         }
 
         private void OnDisable()
         {
-            фы23ева.фвыйцуРУИ<аврывар>().Enable();
+            Absidiant.фвыйцуРУИ<PlayerInputLogic>().Enable();
         }
 
         private IEnumerator ClosePrefRoutine()
@@ -116,7 +116,7 @@ namespace Core.UI
 
         private void OpenLevel()
         {
-            var loader = фы23ева.фвыйцуРУИ<DFSHDSFASW>();
+            var loader = Absidiant.фвыйцуРУИ<DFSHDSFASW>();
 
             if (_result == SADHDSAFHDFSHD.GameResult.Lose)
             {
@@ -130,7 +130,7 @@ namespace Core.UI
             {
                 if (_isLastLevel)
                 {
-                    фы23ева.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LevelMenuWindow>();
+                    Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LevelMenuWindow>();
                     Close();
                     return;
                 }
