@@ -25,8 +25,8 @@ namespace Core
 
             lerease = true;
 
-            fargus.OnAnimationStateStarted += OnÂûàïğâàAnimStart;
-            fargus.OnAnimationStateEnded += OnÂûàïğâàAnimEnd;
+            fargus.OnAnimationStateStarted += OnAnimStartHandler;
+            fargus.OnAnimationStateEnded += OnAnimEndHandler;
         }
 
         public void DSFH()
@@ -34,12 +34,12 @@ namespace Core
             lerease = true;
         }
 
-        private void OnÂûàïğâàAnimEnd()
+        private void OnAnimEndHandler()
         {
             DSFH();
         }
 
-        private void OnÂûàïğâàAnimStart()
+        private void OnAnimStartHandler()
         {
             lerease = false;
         }
