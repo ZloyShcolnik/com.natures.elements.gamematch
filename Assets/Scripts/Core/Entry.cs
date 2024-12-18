@@ -31,8 +31,8 @@ namespace Core
         private void Start()
         {
             //ServiceLocator.Get<InterfaceDispatcher>().Open<MainMenuWindow>();
-            Absidiant.פגûיצף׀׃ָ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<PrivacyDialogWindow>();
-            Absidiant.פגûיצף׀׃ָ<Logenation>().SetFieldVisibility(false);
+            Absidiant.facitdetems<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<PrivacyDialogWindow>();
+            Absidiant.facitdetems<Logenation>().SetFieldVisibility(false);
         }
 
         private void InstallBindings()
@@ -50,7 +50,7 @@ namespace Core
             var levelLoader = new DFSHDSFASW();
             Absidiant.Bind<DFSHDSFASW>(levelLoader);
             Absidiant.Bind<DFHJDFASAS>(new DFHJDFASAS(levelLoader));
-            levelLoader.SetListener(Absidiant.פגûיצף׀׃ָ<DFHJDFASAS>());
+            levelLoader.SetListener(Absidiant.facitdetems<DFHJDFASAS>());
             
             Absidiant.Bind<ASWDFRHG>(new ASWDFRHG(_cellReference));
             Absidiant.Bind<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>(new ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF(_ui, _canvas));
@@ -59,9 +59,9 @@ namespace Core
             Absidiant.Bind<SoundController>(new SoundController(_sound));
             Absidiant.Bind<ClickSoundController>(new ClickSoundController(_clickSound));
 
-            _sdhdaqe.Bind(Absidiant.פגûיצף׀׃ָ<ASWERHJNDFS>()).AsUpdateListener();
-            _sdhdaqe.Bind(Absidiant.פגûיצף׀׃ָ<PlayerInputLogic>()).AsUpdateListener();
-            _sdhdaqe.Bind(Absidiant.פגûיצף׀׃ָ<DFHJDFASAS>()).AsUpdateListener();
+            _sdhdaqe.Bind(Absidiant.facitdetems<ASWERHJNDFS>()).AsUpdateListener();
+            _sdhdaqe.Bind(Absidiant.facitdetems<PlayerInputLogic>()).AsUpdateListener();
+            _sdhdaqe.Bind(Absidiant.facitdetems<DFHJDFASAS>()).AsUpdateListener();
         }
     }
 }

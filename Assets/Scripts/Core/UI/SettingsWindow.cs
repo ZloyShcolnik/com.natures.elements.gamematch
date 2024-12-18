@@ -23,7 +23,7 @@ namespace Core.UI
         private float _prevVolume;
         private BaseWindow _prev;
 
-        private bool IsMuted => Absidiant.фвыйцуРУИ<SoundController>().Volume > 0;
+        private bool IsMuted => Absidiant.facitdetems<SoundController>().Volume > 0;
 
         public void SetPrev(BaseWindow prev)
         {
@@ -80,14 +80,14 @@ namespace Core.UI
 
         private void SetVolume(float value)
         {
-            Absidiant.фвыйцуРУИ<SoundController>().Volume = value;
+            Absidiant.facitdetems<SoundController>().Volume = value;
         }
 
         private void SwitchSound(bool isOn)
         {
             _isSoundMuted = !isOn;
 
-            Absidiant.фвыйцуРУИ<ClickSoundController>().Volume = _isSoundMuted ? 0 : 1;
+            Absidiant.facitdetems<ClickSoundController>().Volume = _isSoundMuted ? 0 : 1;
 
             // _soundMutedSprite.gameObject.SetActive(_isSoundMuted);
             // _soundButton.image.sprite = _isSoundMuted ? _mutedSprite : _unmutedSprite;
@@ -97,7 +97,7 @@ namespace Core.UI
         {
             _isMusicMuted = !isOn;
 
-            Absidiant.фвыйцуРУИ<SoundController>().Volume = _isMusicMuted ? 0 : 1;
+            Absidiant.facitdetems<SoundController>().Volume = _isMusicMuted ? 0 : 1;
 
             // _musicMutedSprite.gameObject.SetActive(_isMusicMuted);
             // _musicButton.image.sprite = _isMusicMuted ? _mutedSprite : _unmutedSprite;

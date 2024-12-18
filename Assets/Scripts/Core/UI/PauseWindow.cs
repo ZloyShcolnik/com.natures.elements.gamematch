@@ -32,7 +32,7 @@ namespace Core.UI
         {
             gameObject.SetActive(false);
             
-            GameWindow gameWindow = Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<GameWindow>();
+            GameWindow gameWindow = Absidiant.facitdetems<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<GameWindow>();
             gameWindow.Unpause();
         }
 
@@ -40,24 +40,24 @@ namespace Core.UI
         {
             _isMuted = !_isMuted;
 
-            Absidiant.фвыйцуРУИ<SoundController>().Volume = _isMuted ? 0 : 1;
+            Absidiant.facitdetems<SoundController>().Volume = _isMuted ? 0 : 1;
 
             _soundButtonImage.sprite = _isMuted ? _unmutedSprite : _mutedSprite;
         }
 
         private void OpenMenu()
         {
-            Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<MainMenuWindow>();
-            Absidiant.фвыйцуРУИ<Logenation>().SetFieldVisibility(false);
+            Absidiant.facitdetems<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<MainMenuWindow>();
+            Absidiant.facitdetems<Logenation>().SetFieldVisibility(false);
 
             gameObject.SetActive(false);
         }
 
         private void Restart()
         {
-            Absidiant.фвыйцуРУИ<Logenation>().ResetField();
-            Absidiant.фвыйцуРУИ<ASWERHJNDFS>().ADSFHADFH();
-            Absidiant.фвыйцуРУИ<AQRWYE>().Reset();
+            Absidiant.facitdetems<Logenation>().ResetField();
+            Absidiant.facitdetems<ASWERHJNDFS>().ADSFHADFH();
+            Absidiant.facitdetems<AQRWYE>().Reset();
 
             CloseAndReturnToGame();
         }

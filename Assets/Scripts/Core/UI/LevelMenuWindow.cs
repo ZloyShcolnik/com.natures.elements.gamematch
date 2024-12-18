@@ -17,11 +17,11 @@ namespace Core.UI
 
         // private readonly Color _starColor = new Color(172f / 255, 37f / 255, 47f / 255, 1);
 
-        public int OpenLevels => Absidiant.фвыйцуРУИ<DSFZJDSFGJDF>().OpenedLevels.Count(val => val);
+        public int OpenLevels => Absidiant.facitdetems<DSFZJDSFGJDF>().OpenedLevels.Count(val => val);
 
         protected override void OnAwake()
         {
-            Absidiant.фвыйцуРУИ<DSFZJDSFGJDF>().OnNewlevelOpened += UpdateLevels;
+            Absidiant.facitdetems<DSFZJDSFGJDF>().OnNewlevelOpened += UpdateLevels;
             _privacyButton?.onClick.AddListener(OpenPrivacy);
 
             for (int i = 0; i < _levelsLayoutGroup.transform.childCount; i++)
@@ -44,16 +44,16 @@ namespace Core.UI
 
         protected override void Close()
         {
-            Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<MainMenuWindow>();
+            Absidiant.facitdetems<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<MainMenuWindow>();
             gameObject.SetActive(false);
         }
 
         private void OpenPrivacy()
         {
-            LongTextWindow textWindow = Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LongTextWindow>();
-            textWindow.Label = Absidiant.фвыйцуРУИ<TextAtlas>().Map
+            LongTextWindow textWindow = Absidiant.facitdetems<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<LongTextWindow>();
+            textWindow.Label = Absidiant.facitdetems<TextAtlas>().Map
                 .First(text => text.TypeId == TextAtlas.TextType.Privacy).Label;
-            textWindow.Text = Absidiant.фвыйцуРУИ<TextAtlas>().Map
+            textWindow.Text = Absidiant.facitdetems<TextAtlas>().Map
                 .First(text => text.TypeId == TextAtlas.TextType.Privacy).Text;
             textWindow.SetPrevWindow(this);
 
@@ -85,8 +85,8 @@ namespace Core.UI
 
         private void OpenLevel(int level)
         {
-            Absidiant.фвыйцуРУИ<DFSHDSFASW>().LoadLevel(level);
-            GameWindow gameWindow = Absidiant.фвыйцуРУИ<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<GameWindow>();
+            Absidiant.facitdetems<DFSHDSFASW>().LoadLevel(level);
+            GameWindow gameWindow = Absidiant.facitdetems<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>().Open<GameWindow>();
             gameWindow.LevelText = level + 1;
             gameWindow.Unpause();
 

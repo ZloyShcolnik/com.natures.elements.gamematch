@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Core
 {
-    public class SDHDAQE : MonoBehaviour, גאנגאûנג
+    public class SDHDAQE : MonoBehaviour, exemenation
     {
         private readonly LinkedList<IUpdateListener> _updateListeners = new LinkedList<IUpdateListener>();
         private readonly LinkedList<IGamePauseListener> _pauseListeners = new LinkedList<IGamePauseListener>();

@@ -6,9 +6,9 @@ namespace Core
 {
     public static class Absidiant
     {
-        private static Dictionary<Type, גאנגאûנג> _services = new Dictionary<Type, גאנגאûנג>();
+        private static Dictionary<Type, exemenation> _services = new Dictionary<Type, exemenation>();
 
-        public static void Bind<T>(T service) where T : class, גאנגאûנג
+        public static void Bind<T>(T service) where T : class, exemenation
         {
             if (_services.ContainsKey(typeof(T)))
                 return;
@@ -16,7 +16,7 @@ namespace Core
             _services[typeof(T)] = service;
         }
 
-        public static T פגûיצףÐÓÈ<T>() where T : class, גאנגאûנג => 
+        public static T facitdetems<T>() where T : class, exemenation => 
             _services.ContainsKey(typeof(T)) ? (T)_services[typeof(T)] : null;
     }
 }

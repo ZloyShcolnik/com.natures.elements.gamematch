@@ -34,6 +34,6 @@ namespace Core.UI
 
         protected virtual void Close() => gameObject.SetActive(false);
         
-        public void PlayClickSound() => Absidiant.פגûיצף׀׃ָ<ClickSoundController>().Play();
+        public void PlayClickSound() => Absidiant.facitdetems<ClickSoundController>().Play();
     }
 }

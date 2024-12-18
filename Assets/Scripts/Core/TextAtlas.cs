@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Core
 {
     [CreateAssetMenu(fileName = "TextAtlas", menuName = "Game/TextAtlas")]
-    public class TextAtlas : ScriptableObject, גאנגאûנג
+    public class TextAtlas : ScriptableObject, exemenation
     {
         public enum TextType
         {

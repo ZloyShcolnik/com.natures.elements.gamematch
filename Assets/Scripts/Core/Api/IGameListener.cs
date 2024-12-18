@@ -1,8 +1,8 @@
 namespace Core.Api
 {
-    public interface גאנגאûנג {}
+    public interface exemenation {}
 
-    public interface IGameListener : גאנגאûנג {}
+    public interface IGameListener : exemenation {}
 
     public interface IUpdateListener : IGameListener
     {

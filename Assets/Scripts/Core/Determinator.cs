@@ -9,29 +9,29 @@ using Object = UnityEngine.Object;
 
 namespace Core
 {
-    public class Determinator : варваырв
+    public class Determinator : exemenation
     {
-        private readonly PlayerInputLogic _варвы;
-        private readonly Logenation ___выапрва;
-        private bool _выфпрфавы21;
+        private readonly PlayerInputLogic fongas;
+        private readonly Logenation fargus;
+        private bool lerease;
 
         public Determinator()
         {
-            _варвы = Absidiant.фвыйцу–”»<PlayerInputLogic>();
-            ___выапрва = Absidiant.фвыйцу–”»<Logenation>();
+            fongas = Absidiant.facitdetems<PlayerInputLogic>();
+            fargus = Absidiant.facitdetems<Logenation>();
 
-            _варвы.WAERSG += DFGHADS;
-            _варвы.OnDeselected += DSAFHSADF;
+            fongas.WAERSG += DFGHADS;
+            fongas.OnDeselected += DSAFHSADF;
 
-            _выфпрфавы21 = true;
+            lerease = true;
 
-            ___выапрва.OnAnimationStateStarted += On¬ыапрваAnimStart;
-            ___выапрва.OnAnimationStateEnded += On¬ыапрваAnimEnd;
+            fargus.OnAnimationStateStarted += On¬ыапрваAnimStart;
+            fargus.OnAnimationStateEnded += On¬ыапрваAnimEnd;
         }
 
         public void DSFH()
         {
-            _выфпрфавы21 = true;
+            lerease = true;
         }
 
         private void On¬ыапрваAnimEnd()
@@ -41,27 +41,27 @@ namespace Core
 
         private void On¬ыапрваAnimStart()
         {
-            _выфпрфавы21 = false;
+            lerease = false;
         }
 
         private void DSAFHSADF()
         {
-            if (!_выфпрфавы21)
+            if (!lerease)
                 return;
 
-            ___выапрва.Deselect();
+            fargus.Deselect();
         }
 
         private void DFGHADS(Cell clicked)
         {
-            if (!_выфпрфавы21)
+            if (!lerease)
                 return;
 
-            ___выапрва.OnCellClicked(clicked);
+            fargus.OnCellClicked(clicked);
         }
     }
 
-    public class ASWDFRHG : варваырв
+    public class ASWDFRHG : exemenation
     {
         private const int ADSFH = 5;
 
@@ -100,7 +100,7 @@ namespace Core
         }
     }
 
-    public class DFSHDSFASW : варваырв
+    public class DFSHDSFASW : exemenation
     {
         private readonly Logenation _field;
         private readonly ASWERHJNDFS _aswerhjndfs;
@@ -114,10 +114,10 @@ namespace Core
 
         public DFSHDSFASW()
         {
-            _field = Absidiant.фвыйцу–”»<Logenation>();
-            _aswerhjndfs = Absidiant.фвыйцу–”»<ASWERHJNDFS>();
-            _aqrwye = Absidiant.фвыйцу–”»<AQRWYE>();
-            ____ASDFRHG = Absidiant.фвыйцу–”»<SDHDAQE>();
+            _field = Absidiant.facitdetems<Logenation>();
+            _aswerhjndfs = Absidiant.facitdetems<ASWERHJNDFS>();
+            _aqrwye = Absidiant.facitdetems<AQRWYE>();
+            ____ASDFRHG = Absidiant.facitdetems<SDHDAQE>();
         }
 
         public void LoadLevel(int index)
@@ -141,7 +141,7 @@ namespace Core
         }
     }
 
-    public class AQRWYE : варваырв
+    public class AQRWYE : exemenation
     {
         private const float DFGS = 1.1f;
         private const int DGJMAS = 100;
@@ -155,7 +155,7 @@ namespace Core
 
         public AQRWYE()
         {
-            var buff = Absidiant.фвыйцу–”»<LevelScoreConstraints>().Map[0].Score;
+            var buff = Absidiant.facitdetems<LevelScoreConstraints>().Map[0].Score;
             ___ASDFGHDFH = new List<TargetScore>();
 
             for (int i = 0; i < buff.Count; i++)
@@ -214,8 +214,8 @@ namespace Core
 
         public void Reset()
         {
-            var buff = Absidiant.фвыйцу–”»<LevelScoreConstraints>()
-                .Map[Absidiant.фвыйцу–”»<DFSHDSFASW>().ASDFH].Score;
+            var buff = Absidiant.facitdetems<LevelScoreConstraints>()
+                .Map[Absidiant.facitdetems<DFSHDSFASW>().ASDFH].Score;
             ___ASDFGHDFH = new List<TargetScore>();
 
             for (int i = 0; i < buff.Count; i++)
@@ -246,7 +246,7 @@ namespace Core
         public void ADSFHADFH() => ____ = 0;
     }
 
-    public class ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF : варваырв
+    public class ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF : exemenation
     {
         private readonly List<BaseWindow> _windows;
         private readonly Canvas _canvas;
@@ -292,15 +292,15 @@ namespace Core
 
         public DFHJDFASAS(DFSHDSFASW dfshdsfasw)
         {
-            Absidiant.фвыйцу–”»<AQRWYE>().OnValueChanged += CheckWin;
-            _aswerhjndfs = Absidiant.фвыйцу–”»<ASWERHJNDFS>();
-            _constraints = Absidiant.фвыйцу–”»<LevelScoreConstraints>();
+            Absidiant.facitdetems<AQRWYE>().OnValueChanged += CheckWin;
+            _aswerhjndfs = Absidiant.facitdetems<ASWERHJNDFS>();
+            _constraints = Absidiant.facitdetems<LevelScoreConstraints>();
             _dfshdsfasw = dfshdsfasw;
         }
 
         private void CheckWin(int _)
         {
-            List<TargetScore> current = Absidiant.фвыйцу–”»<AQRWYE>().QW4YBDGF;
+            List<TargetScore> current = Absidiant.facitdetems<AQRWYE>().QW4YBDGF;
 
             if (!_isInvoked &&
                 current[0].Score >= _constraints.Map[_dfshdsfasw.ASDFH].Score[0].Score &&
@@ -309,7 +309,7 @@ namespace Core
             {
                 OnGameEnd?.Invoke();
                 _isInvoked = true;
-                Absidiant.фвыйцу–”»<ASWERHJNDFS>().ADSFHDF();
+                Absidiant.facitdetems<ASWERHJNDFS>().ADSFHDF();
             }
         }
 
@@ -326,7 +326,7 @@ namespace Core
         public void Reset() => _isInvoked = false;
     }
 
-    public class SADHDSAFHDFSHD : варваырв
+    public class SADHDSAFHDFSHD : exemenation
     {
         private readonly DFHJDFASAS _listener;
         private readonly LevelScoreConstraints _constraints;
@@ -343,10 +343,10 @@ namespace Core
 
         public SADHDSAFHDFSHD()
         {
-            _listener = Absidiant.фвыйцу–”»<DFHJDFASAS>();
-            _constraints = Absidiant.фвыйцу–”»<LevelScoreConstraints>();
-            _level = Absidiant.фвыйцу–”»<DFSHDSFASW>();
-            _aqrwye = Absidiant.фвыйцу–”»<AQRWYE>();
+            _listener = Absidiant.facitdetems<DFHJDFASAS>();
+            _constraints = Absidiant.facitdetems<LevelScoreConstraints>();
+            _level = Absidiant.facitdetems<DFSHDSFASW>();
+            _aqrwye = Absidiant.facitdetems<AQRWYE>();
 
             _listener.OnGameEnd += GetResult;
         }
@@ -364,7 +364,7 @@ namespace Core
         }
     }
 
-    public class DSFZJDSFGJDF : варваырв
+    public class DSFZJDSFGJDF : exemenation
     {
         private readonly LevelScoreConstraints _constraints;
         private readonly DFSHDSFASW _loader;
@@ -378,11 +378,11 @@ namespace Core
 
         public DSFZJDSFGJDF()
         {
-            _constraints = Absidiant.фвыйцу–”»<LevelScoreConstraints>();
-            _loader = Absidiant.фвыйцу–”»<DFSHDSFASW>();
-            _resolver = Absidiant.фвыйцу–”»<SADHDSAFHDFSHD>();
-            _ui = Absidiant.фвыйцу–”»<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>();
-            _aqrwye = Absidiant.фвыйцу–”»<AQRWYE>();
+            _constraints = Absidiant.facitdetems<LevelScoreConstraints>();
+            _loader = Absidiant.facitdetems<DFSHDSFASW>();
+            _resolver = Absidiant.facitdetems<SADHDSAFHDFSHD>();
+            _ui = Absidiant.facitdetems<ASDFHGADFSHJSFGJFDGXJMDFVGJMCDF>();
+            _aqrwye = Absidiant.facitdetems<AQRWYE>();
             _openedLevels = new bool[_constraints.Map.Count];
             _openedLevels[0] = true;
 
@@ -391,7 +391,7 @@ namespace Core
 
         private void TryOpenLevel(SADHDSAFHDFSHD.GameResult result)
         {
-            Absidiant.фвыйцу–”»<Logenation>().SetFieldVisibility(false);
+            Absidiant.facitdetems<Logenation>().SetFieldVisibility(false);
             EndGameWindow endWindow = _ui.Open<EndGameWindow>();
             endWindow.SetPrev(_ui.Open<GameWindow>());
             endWindow.SetResult(result);
@@ -418,7 +418,7 @@ namespace Core
         }
     }
 
-    public class SoundController : варваырв
+    public class SoundController : exemenation
     {
         protected readonly AudioSource _source;
         private readonly float _startVolume;

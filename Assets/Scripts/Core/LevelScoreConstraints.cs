@@ -13,7 +13,7 @@ namespace Core
     }
 
     [CreateAssetMenu(fileName = "LevelScoreConstraints", menuName = "Game/LevelConstaints")]
-    public class LevelScoreConstraints : ScriptableObject, גאנגאûנג
+    public class LevelScoreConstraints : ScriptableObject, exemenation
     {
 
         [Serializable]
