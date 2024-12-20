@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "470948101330",
+    "project_id": "nature-s-elements-match",
+    "storage_bucket": "nature-s-elements-match.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470948101330:android:3f8d02609602b3e587410b",
+        "android_client_info": {
+          "package_name": "com.natures.elements.gamematch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIeFIQ-_Kj91X5CFFUdl949PXlH-FSDlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
